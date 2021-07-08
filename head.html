@@ -1,0 +1,25 @@
+<!-- Prism.js -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+<!-- MathJax -->
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<!-- 
+cf. https://github.com/tw-in-js/twind/discussions/161#discussioncomment-535632
+-->
+<script crossorigin="anonymous" src="https://cdn.jsdelivr.net/combine/npm/twind/twind.umd.min.js,npm/twind/observe/observe.umd.min.js"></script>
+<script type="text/javascript">
+   twind.setup(
+    {
+      mode: 'silent',  // Behave well with semantic UI classes
+      preflight: () => {
+        return {
+           // Custom styles based on selectors go here (use the selector in Markdown; see below)
+           ".my-highlight": twind.apply("bg-yellow-100 text-green-500 font-bold p-2")
+        }
+      }
+    }
+  );
+  twindObserve.observe(document.documentElement)
+</script>
+<!-- End of Twind script -->
