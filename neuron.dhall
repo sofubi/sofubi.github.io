@@ -7,6 +7,6 @@
 , theme =
     "olive"
 , editUrl = 
-    Some "https://github.com/sofubi/zetteler/edit/master/"
+    Some "https://github.com/sofubi/sofubi.github.io/edit/master/"
 , plugins = ["neuronignore", "links", "uptree", "tags", "feed"]
 }
